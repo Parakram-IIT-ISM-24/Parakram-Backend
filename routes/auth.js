@@ -16,8 +16,13 @@ router.post("/pr" , deserializeUser , (req , res) => {
     res.send({user : req.user});
 });
 
+    
 
-
+//Below is the example of a protected route
+// router.get('/s', deserializeUser , (req , res) => {
+//     if(!req.user) return res.send({error : "No user logged In"});
+//     res.send({data : req.user});
+// });
 
 
 module.exports = router;
