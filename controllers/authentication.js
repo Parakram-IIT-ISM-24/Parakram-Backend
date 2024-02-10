@@ -86,7 +86,6 @@ module.exports = {
       const { payload } = await verifyData(otp.otp);
       const { data } = payload;
       console.log(data);
-      console.log(data);
       if (!data)
         throw new createError(
           401,
