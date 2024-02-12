@@ -14,7 +14,7 @@ const DB_URL = process.env.DB_URL;
 
 const app = express();
 app.use(cors({
-  origin: '*',
+  origin: true,
   methods: ["GET", "PATCH", "POST", "PUT", "DELETE"],
   credentials: true
 }));
